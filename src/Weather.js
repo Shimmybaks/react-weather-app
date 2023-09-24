@@ -5,8 +5,17 @@ import "./App.css";
 export default function Weather({ defaultCity }) {
     const [weatherData, setWeatherData] = useState(null);
     const [city, setCity] = useState(defaultCity);
-    const apiKey = "9cb245c8974a9aa2bee9c6e33954b52a";
+    const apiKey = "1dbf926d3b4417bf379db7043bec1047";
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+
+
+
+
+
+
+
+
+
 
     useEffect(() => {
         const fetchWeatherData = async () => {
