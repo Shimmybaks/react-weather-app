@@ -42,7 +42,7 @@ export default function Weather({ defaultCity }) {
     return (
         <div className="container">
             <video autoPlay loop muted id="weatherVideo">
-                <source id="dayVideo" src="videos/sky-clouds.mp4" type="video/mp4" />
+                <source id="dayVideo" src="/videos/cloudy-sky.mp4" type="video/mp4" />
             </video>
 
             <div className="weather-app-wrapper">
