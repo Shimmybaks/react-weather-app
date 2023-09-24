@@ -8,15 +8,6 @@ export default function Weather({ defaultCity }) {
     const apiKey = "1dbf926d3b4417bf379db7043bec1047";
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
-
-
-
-
-
-
-
-
-
     useEffect(() => {
         const fetchWeatherData = async () => {
             try {
