@@ -3,10 +3,9 @@ import axios from "axios";
 import Weather from "./Weather";
 import "./App.css";
 
-const config = {
-    apiKey: "9cb72bec958f8fb02391985ed7b219d2",
-    apiUrl: "https://api.openweathermap.org/data/2.5/",
-};
+const apiKey = "1dbf926d3b4417bf379db7043bec1047";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
 
 function formatDate(timestamp) {
     const date = new Date(timestamp);

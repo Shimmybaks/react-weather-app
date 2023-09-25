@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import App from "./App";
 import "./App.css";
 
 export default function Weather({ defaultCity }) {
     const [weatherData, setWeatherData] = useState(null);
     const [city, setCity] = useState(defaultCity);
     const apiKey = "1dbf926d3b4417bf379db7043bec1047";
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
     useEffect(() => {
         const fetchWeatherData = async () => {
