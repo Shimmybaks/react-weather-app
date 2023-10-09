@@ -86,7 +86,7 @@ export default function Weather({ defaultCity }) {
                                     className="float-left"
                                 />
                                 <div className="float-left">
-                                    <strong id="temperature">{temp}</strong>
+                                    <strong id="temperature">{Math.round(temp)}</strong>
                                     <span className="units"> °C</span>
                                 </div>
                             </div>
